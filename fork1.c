@@ -14,6 +14,7 @@ int main(int argc, char* argv[]){
 
     int w1 = waitpid(rc);
     int w2 = waitpid( rc2);
+    
     // a parent can have multiple children, but every child has a unique parent
     printf("PID: %d, w1: %d, w2: %d\n", (int) getpid(), w1, w2);
 
